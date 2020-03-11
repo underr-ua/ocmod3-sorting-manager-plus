@@ -1,7 +1,7 @@
 # Sorting Manager+
 
 ## Description
-The Sorting Manager+ extension is for Opencart 3 CMS. It gives administrator control over the sorting of products
+The Sorting Manager+ extension is for Opencart 3 CMS. It gives control over the sorting of products.
 
 ## Features
 * Control over the sorting methods on the following pages: Category, Manufacturer, Search and Specials
