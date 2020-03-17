@@ -1,5 +1,10 @@
 # Change log
 
+## [1.0.2] - 2020-03-16:
+### Fixed
+- Manufacturer page sorting issue
+- Code improvements
+
 ## [1.0.1] - 2020-03-11:
 ### Fixed
 - Special and Manufacturer
