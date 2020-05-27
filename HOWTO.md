@@ -5,10 +5,10 @@
 * Admin > Extensions > Installer > [Upload]: sorting-manager-plus.ocmod.zip
 * Admin > Extensions > Modifications > [Refresh]
 * Admin > Dashboard > [Developer Settings] > [Refresh]
+* Admin > Extensions > Extensions > Modules > [underr] Sorting Manager+ > [Install]
 
 ## How to configure
-* Admin > Extensions > Extensions > Modules > [underr] Sorting Manager+ > [Install]
-* Admin > Extensions > Extensions > Modules > [underr] Sorting Manager+ > [Edit]:
+* Admin > Extensions > Extensions > Modules > [underr] Sorting Manager+ > [Edit]
 
 ## How to uninstall
 * Start by making a backup (both DB and store files)!!!

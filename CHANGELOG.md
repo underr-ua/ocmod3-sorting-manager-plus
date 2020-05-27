@@ -1,5 +1,14 @@
 # Change log
 
+## [1.1.0] - 2020-05-27:
+### Added
+- Sorting by popularity (by viewed)
+### Changed
+- Options format
+### Fixed
+- Multilanguage
+- Code improvements
+
 ## [1.0.2] - 2020-03-16:
 ### Fixed
 - Manufacturer page sorting issue
