@@ -11,7 +11,7 @@ The Sorting Manager+ extension is for Opencart 3 CMS. It gives control over the 
 * Ability to disable unnecessary sorting options
 * Default sorting method
 * Default quantity of products per page
-* Multilinguage
+* Multi-language
 * Multi-store support
 * High compatibility level with custom templates and modules due to using OCMOD and Event System
 

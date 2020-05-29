@@ -6,7 +6,7 @@
 ### Changed
 - Options format
 ### Fixed
-- Multilinguage issues
+- Multi-language
 - Code improvements
 
 ## [1.0.2] - 2020-03-16:
