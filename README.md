@@ -4,14 +4,16 @@
 The Sorting Manager+ extension is for Opencart 3 CMS. It gives control over the sorting methods of products.
 
 ## Features
-* Control over the sorting methods on the following pages: Category, Manufacturer, Search and Specials
+* Control over product sorting methods on the following pages: Category, Manufacturer, Search and Specials
 * Additional sorting methods:
-    * Date Added
-* Enable/disable specific sorting options
-* Setting the default sorting method
-* Setting the default quantity of products per page
+    * by date added
+    * by view count (popularity)
+* Ability to disable unnecessary sorting options
+* Default sorting method
+* Default quantity of products per page
+* Multilinguage
 * Multi-store support
-* High compatibility level with custom templates and modules due to using OCMOD and OC Event System
+* High compatibility level with custom templates and modules due to using OCMOD and Event System
 
 ## Live demo
 * [Admin](http://ocmod.freevar.com/oc3020/a/admin/index.php?route=extension/module/sorting_manager)
