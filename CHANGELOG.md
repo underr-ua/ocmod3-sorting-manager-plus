@@ -1,5 +1,9 @@
 # Change log
 
+## [1.2.0] - 2021-01-29:
+### Added
+- Sorting by date modified (by viewed)
+
 ## [1.1.0] - 2020-05-27:
 ### Added
 - Sorting by popularity (by viewed)
