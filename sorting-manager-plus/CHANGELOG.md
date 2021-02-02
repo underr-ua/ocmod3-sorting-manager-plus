@@ -1,5 +1,9 @@
 # Change log
 
+## [1.2.1] - 2021-02-01:
+### Fixed
+- Minor issue
+
 ## [1.2.0] - 2021-01-29:
 ### Added
 - Sorting by date modified (by viewed)
