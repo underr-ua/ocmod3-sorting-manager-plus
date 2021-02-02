@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This file is part of "Sorting Manager+" project and subject to the terms
+and conditions defined in file "LICENSE.txt", which is part of this source
+code package and also available on the project page: https://git.io/Jvrsy.
+-->
+
+<modification>
+	<name>[underr] Sorting Manager+ > Journal3</name>
+	<code>sorting-manager-plus--j3</code>
+	<version>1.0.0</version>
+	<author>Andrii Burkatskyi aka underr</author>
+	<link>https://git.io/Jvrsy</link>
+
+	<file path="catalog/controller/product/{catalog,category,manufacturer,search}.php" error="log">
+		<operation error="log">
+			<search>
+				<![CDATA[$sort = $this->journal3->settings->get('productSort');]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$sort = 'p.sort_order';]]>
+			</add>
+		</operation>
+		<operation error="log">
+			<search>
+				<![CDATA[$order = $this->journal3->settings->get('productOrder');]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$order = 'ASC';]]>
+			</add>
+		</operation>
+
+		<operation error="log">
+			<search>
+				<![CDATA[$sort = 'p.sort_order';]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$sort = $this->model_extension_module_sorting_manager->getDefaultSort('category');]]>
+			</add>
+		</operation>
+		<operation error="log">
+			<search>
+				<![CDATA[$order = 'ASC';]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$order = $this->model_extension_module_sorting_manager->getDefaultOrder('category');]]>
+			</add>
+		</operation>
+
+		<operation error="log">
+			<search>
+				<![CDATA[$filter_data = array_merge($this->model_journal3_filter->parseFilterData(), $filter_data);]]>
+			</search>
+			<add position="replace">
+				<![CDATA[// $filter_data = array_merge($this->model_journal3_filter->parseFilterData(), $filter_data);]]>
+			</add>
+		</operation>
+
+		<operation error="log">
+			<search>
+				<![CDATA[$product_total = $this->model_journal3_filter->getTotalProducts();]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$product_total = $this->model_catalog_product->getTotalProducts($filter_data);]]>
+			</add>
+		</operation>
+
+		<operation error="log">
+			<search>
+				<![CDATA[$results = $this->model_journal3_filter->getProducts($filter_data);]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$results = $this->model_catalog_product->getProducts($filter_data);]]>
+			</add>
+		</operation>
+
+		<operation error="log">
+			<search>
+				<![CDATA[$url .= $this->model_journal3_filter->buildFilterData($filter_data);]]>
+			</search>
+			<add position="replace">
+				<![CDATA[// $url .= $this->model_journal3_filter->buildFilterData($filter_data);]]>
+			</add>
+		</operation>
+	</file>
+    <file path="catalog/controller/product/special.php">
+		<operation error="log">
+			<search>
+				<![CDATA[$filter_data['special'] = true;]]>
+			</search>
+			<add position="replace">
+				<![CDATA[// $filter_data['special'] = true;]]>
+			</add>
+		</operation>
+		<operation error="log">
+			<search>
+				<![CDATA[$filter_data = array_merge($this->model_journal3_filter->parseFilterData(), $filter_data);]]>
+			</search>
+			<add position="replace">
+				<![CDATA[// $filter_data = array_merge($this->model_journal3_filter->parseFilterData(), $filter_data);]]>
+			</add>
+		</operation>
+		<operation error="log">
+			<search>
+				<![CDATA[$product_total = $this->model_journal3_filter->getTotalProducts();]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$product_total = $this->model_catalog_product->getTotalProductSpecials();]]>
+			</add>
+		</operation>
+		<operation error="log">
+			<search>
+				<![CDATA[$results = $this->model_journal3_filter->getProducts($filter_data);]]>
+			</search>
+			<add position="replace">
+				<![CDATA[$results = $this->model_catalog_product->getProductSpecials($filter_data);]]>
+			</add>
+		</operation>
+		<operation error="log">
+			<search>
+				<![CDATA[$url .= $this->model_journal3_filter->buildFilterData($filter_data);]]>
+			</search>
+			<add position="replace">
+				<![CDATA[// $url .= $this->model_journal3_filter->buildFilterData($filter_data);]]>
+			</add>
+		</operation>
+	</file>
+</modification>
